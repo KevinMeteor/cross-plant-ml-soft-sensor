@@ -1,0 +1,53 @@
+# ============================================================
+# Cross-Plant ML Soft Sensor
+# Public GitHub Portfolio - Allowlist Strategy
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. Ignore everything by default
+# ------------------------------------------------------------
+*
+
+# ------------------------------------------------------------
+# 2. Allow essential repository files
+# ------------------------------------------------------------
+!.gitignore
+!README.md
+!LICENSE
+
+# ------------------------------------------------------------
+# 3. Allow public portfolio directory
+# ------------------------------------------------------------
+!public/
+!public/**
+
+# Keep the presentation private until review is complete
+public/presentation/
+
+# ------------------------------------------------------------
+# 4. Explicitly block common temporary / system files
+#    even if they appear inside public/
+# ------------------------------------------------------------
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini
+
+**/__pycache__/
+**/*.py[cod]
+**/.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# 5. Block environment / credential files everywhere
+# ------------------------------------------------------------
+**/.env
+**/.env.*
+**/*.key
+**/*.pem
+**/*credentials*
+**/*secret*
+
+# ------------------------------------------------------------
+# 6. Block editor / IDE settings
+# ------------------------------------------------------------
+.vscode/
+.idea/
